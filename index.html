@@ -1,13 +1,164 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Google AI Studio App</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Street Station - Coming April 2026</title>
+    <meta name="description" content="La Porte's newest modern diner. Coming soon to the heart of Main Street.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation / Header -->
+    <header class="header">
+        <div class="header-container">
+            <div class="logo-container">
+                <img src="images/Main Street Station logo.jpg" alt="Main Street Station" class="logo-image">
+                <span class="logo-text">MAIN STREET STATION</span>
+            </div>
+            <div class="social-links">
+                <a href="https://www.facebook.com/p/Main-Street-Station-61573853823510/" 
+                   target="_blank" 
+                   rel="noopener noreferrer" 
+                   class="social-link"
+                   aria-label="Facebook">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <!-- Hero Banner Section -->
+        <section class="hero-banner">
+            <div class="hero-banner-content">
+                <div class="opening-badge">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <polyline points="12 6 12 12 16 14"></polyline>
+                    </svg>
+                    Opening April 2026
+                </div>
+                
+                <h1 class="hero-title">
+                    <span class="hero-title-main">Main Street</span>
+                    <span class="hero-title-sub">Station</span>
+                </h1>
+                
+                <p class="hero-description">
+                    La Porte's newest modern diner. We're crafting a space where classic flavors meet contemporary style.
+                </p>
+
+                <a href="https://www.facebook.com/p/Main-Street-Station-61573853823510/" 
+                   target="_blank" 
+                   rel="noopener noreferrer" 
+                   class="facebook-cta-button">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                    </svg>
+                    Follow Us on Facebook
+                </a>
+            </div>
+        </section>
+
+        <!-- Info Section -->
+        <section class="info-section">
+            <div class="info-cards">
+                <div class="info-card">
+                    <div class="info-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                            <circle cx="12" cy="10" r="3"></circle>
+                        </svg>
+                    </div>
+                    <div>
+                        <h3 class="info-label">Location</h3>
+                        <p class="info-value">115 W Main St., La Porte, TX</p>
+                    </div>
+                </div>
+                
+                <div class="info-card">
+                    <div class="info-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect width="20" height="16" x="2" y="4" rx="2"></rect>
+                            <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+                        </svg>
+                    </div>
+                    <div>
+                        <h3 class="info-label">Stay Updated</h3>
+                        <p class="info-value">mainstreetstationLPTX</p>
+                    </div>
+                </div>
+            </div>
+
+            <form class="email-form" id="emailForm">
+                <input 
+                    type="email" 
+                    placeholder="Enter your email for updates" 
+                    class="email-input"
+                    required
+                />
+                <button type="submit" class="submit-button">Notify Me</button>
+            </form>
+        </section>
+
+        <!-- Features / About -->
+        <section class="features-section">
+            <div class="feature-card">
+                <div class="feature-icon">🍳</div>
+                <h3 class="feature-title">Modern Diner</h3>
+                <p class="feature-description">A fresh take on the classic American diner experience.</p>
+            </div>
+            
+            <div class="feature-card">
+                <div class="feature-icon">🥩</div>
+                <h3 class="feature-title">Local Flavors</h3>
+                <p class="feature-description">Sourcing the best ingredients from across Texas.</p>
+            </div>
+            
+            <div class="feature-card">
+                <div class="feature-icon">📍</div>
+                <h3 class="feature-title">Main St. Heart</h3>
+                <p class="feature-description">Located right in the center of La Porte's historic district.</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-info">
+                <h2 class="footer-title">MAIN STREET STATION</h2>
+                <p class="footer-copyright">© 2026 Main Street Station. All rights reserved.</p>
+            </div>
+            
+            <div class="footer-social">
+                <a href="https://www.facebook.com/p/Main-Street-Station-61573853823510/" class="footer-link" aria-label="Facebook">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                    </svg>
+                </a>
+                <a href="#" class="footer-link" aria-label="Instagram">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                        <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line>
+                    </svg>
+                </a>
+                <a href="#" class="footer-link" aria-label="Phone">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
 </html>
 
